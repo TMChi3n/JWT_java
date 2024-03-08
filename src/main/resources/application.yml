@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_jwt
+    username: root
+    password: qwert@12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop # Drop schema when closed or shutdown application
+      dialect: org.hibernate.dialect.MySQL8Dialect  # Explicitly set the Hibernate dialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+      database: mysql
